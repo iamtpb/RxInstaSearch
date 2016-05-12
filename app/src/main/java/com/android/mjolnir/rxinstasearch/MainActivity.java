@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     list = new ArrayList<Cities.List>();
     adapter = new WeatherAdapter(list);
     WeatherAPI service = retrofit.create(WeatherAPI.class);
-    Observable<Cities> observable = service.getCities(31.4, 36.7, 10);
+    Observable<Cities> observable = service.getCities(55.5, 37.5, 10);
 
     observable
         .subscribeOn(Schedulers.newThread())
