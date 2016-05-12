@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">RxInstaSearch</string>
+  <string name="API_BASE_URL">http://api.openweathermap.org/data/2.5/</string>
+</resources>
