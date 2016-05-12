@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         .subscribe(new Action1<Cities>() {
           @Override public void call(Cities cities) {
             list = cities.getList();
+            adapter.swapList(list);
           }
         }, new Action1<Throwable>() {
           @Override public void call(Throwable throwable) {

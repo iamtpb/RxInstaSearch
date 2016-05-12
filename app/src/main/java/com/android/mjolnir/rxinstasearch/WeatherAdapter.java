@@ -61,4 +61,9 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
       weatherDescription = (TextView) v.findViewById(R.id.weather_description);
     }
   }
+
+  public void swapList(List<Cities.List> list){
+    this.list = list;
+    notifyDataSetChanged();
+  }
 }
